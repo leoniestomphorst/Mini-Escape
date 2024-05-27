@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Escape</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" id="scene0">
+        <button id="nextSceneButton" class="begin-button">Begin Mini Escape</button>
+    </div>
+    <div class="container" id="scene1">
+        <video width="950" height="650" id="customVideo" autoplay controls>
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+        <!-- <button id="playBtn" class="bigBtn"><span>&#9658;</span></button>
+        <button id="pauseBtn" class="bigBtn"><span>&#10074;&#10074;</span></button> -->
+    </div>
+    <div class="container" id="scene2">
+        <p id="countdown">4:00</p>
+        <button id="startPauseButton">Start</button>
+        <div class="input-container">
+            <input type="text" id="wordInput" placeholder="Typ een woord" autocomplete="off">
+            <button id="confirmButton">Check</button>
+        </div>
+        <div id="popup" class="popup">Niet het goede antwoord!</div>
+    </div>
+    <div class="container" id="scene3">
+        <video width="950" height="650" id="customVideo2" autoplay controls >
+            <source src="einde.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container" id="scene4">
+        <h1>Bedankt voor het spelen van de escape room!</h1>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
